@@ -66,3 +66,57 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 2rem;
+  background: white;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.nav-left a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #111;
+}
+
+.nav-right a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #444;
+}
+
+.nav-right a.active {
+  text-decoration: underline;
+}
+
+.page {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  background-color: #f9f9f9;
+}
