@@ -1,6 +1,7 @@
-import { Link } from 'react-router-dom'
 import './Home.css'
 import { useTypewriter } from '../hooks/useTypewriter'
+import photo from '../assets/dylangrad.jpg'
+import resume from '../assets/resume.pdf'
 
 export default function Home() {
   const role = useTypewriter([
@@ -25,21 +26,21 @@ export default function Home() {
         </p>
 
         <div className="hero-links">
-          <a href="https://linkedin.com/in/YOUR_LINK" target="_blank">
+          <a href="https://www.linkedin.com/in/dylan-mak-a70074338/" target="_blank">
             LinkedIn
           </a>
-          <a href="https://github.com/YOUR_GITHUB" target="_blank">
+          <a href="https://github.com/Shadowmime" target="_blank">
             GitHub
           </a>
         </div>
 
-        <a className="resume-btn" href="/resume.pdf">
+        <a className="resume-btn" href={resume} download>
           Download Resume
         </a>
       </div>
 
       <div className="hero-right">
-        <img src="/me.jpg" alt="Dylan Mak" />
+        <img src={photo} alt="Dylan Mak" />
       </div>
     </section>
   )
