@@ -14,6 +14,13 @@ export default function Navbar() {
         <NavLink to="/projects">
           Projects
         </NavLink>
+        <NavLink to="/skills">
+          Skills
+        </NavLink>
+        <NavLink to="/about">
+          About Me
+        </NavLink>
+        
       </div>
     </nav>
   )

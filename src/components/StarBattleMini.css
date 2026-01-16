@@ -1,0 +1,72 @@
+.starbattle-wrapper {
+  margin-top: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 48px);
+  gap: 6px;
+  justify-content: center;
+}
+
+.cell {
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: #111;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.cell.star {
+  color: #b983ff; /* purple accent */
+}
+
+.cell.conflict {
+  border-color: #ff4d4d;
+}
+
+.hint {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.reset-btn {
+  margin-top: 0.75rem;
+  background: transparent;
+  border: 1px solid #b983ff;
+  color: #b983ff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reset-btn:hover {
+  background: rgba(185, 131, 255, 0.15);
+}
+
+.success {
+  margin-top: 0.5rem;
+  color: #7cff7c;
+  font-size: 0.9rem;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.undergrid {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

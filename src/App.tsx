@@ -6,6 +6,8 @@ import Home from './pages/Home'
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Projects from './pages/Projects'
+import About from './pages/About'
+import Skills from './pages/Skills'
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
       </Routes>
     </>
   )
