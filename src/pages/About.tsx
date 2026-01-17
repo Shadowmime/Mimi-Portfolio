@@ -21,7 +21,7 @@ export default function About() {
       <section className="about-section">
         <h2>Competitive Strategy</h2>
         <p>
-          I compete in high-level Pokémon tournaments, where success depends on critical thinking, 
+          I compete in high-level Pokémon tournaments, where success depends on critical thinking, <br></br>
           probability and risk management, and analyzing the evolving meta.
         </p>
 
